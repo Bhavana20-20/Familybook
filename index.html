@@ -1,0 +1,32 @@
+<html>
+    <center>
+        <h1>My family book</h1>  
+        <img id="family" src="download (2).jpg" height="500" width="500">
+        <br>
+        <button onclick="myfunction()" id="button" type="button"> Next! </button>
+    </center>
+  
+</html>
+<script>
+    var images=[
+        "father-clipart-10.jpg",
+        "daughter.jpg",
+        "Mother.png",
+    ]
+    var names=[
+        Father,Daughter,Mother,
+    ]
+  var i=0;
+  var j=0;
+  function myfunction(){
+      document.getElementById("family").src=images[i];
+      i++;
+      if(i==3){
+          i=0;
+      }
+      document,getElementById("button").src=names[j];
+      i++;
+      if(j==3){
+          j=0;
+      }
+  }
